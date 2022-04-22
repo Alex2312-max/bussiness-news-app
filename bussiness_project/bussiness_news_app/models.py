@@ -42,14 +42,14 @@ class Posts(models.Model):
         verbose_name_plural = 'images'
 
 
-class Posts(models.Model):
-
-    author = models.CharField(max_length=30)
-    title = models.CharField(default='Hot News', max_length=100)
-    article = models.TextField()
-    image = models.FileField(default=None, upload_to='images/')
-    date = models.DateField(default=now)
-    article_permission = models.CharField(max_length=35, choices=article_permission, default='public')
+# class Posts(models.Model):
+#
+#     author = models.CharField(max_length=30)
+#     title = models.CharField(default='Hot News', max_length=100)
+#     article = models.TextField()
+#     image = models.FileField(default=None, upload_to='images/')
+#     date = models.DateField(default=now)
+#     article_permission = models.CharField(max_length=35, choices=article_permission, default='public')
 
     class Meta:
         verbose_name = 'image'
